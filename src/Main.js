@@ -114,7 +114,7 @@ const Main = ({ itemsInfo }) => {
           if ((index + 1) % 4 === 0) {
             rowCounter = rowCounter + 1;
             return (
-              <>
+              <Fragment key={item.id}>
                 <div
                   onClick={() => openCollapsible(item.id, rowCounter)}
                   className="circle"
@@ -123,7 +123,7 @@ const Main = ({ itemsInfo }) => {
                 <div className="collapsible">
                   collapsible<h2>Tittel om denne</h2>
                 </div>
-              </>
+              </Fragment>
             );
           } else {
             return (
