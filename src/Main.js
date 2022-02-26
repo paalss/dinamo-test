@@ -2,8 +2,15 @@ import { Fragment, useState } from "react";
 
 const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState("all");
+  const [collapsible, setCollapsible] = useState(false)
   let rowCounter = 1;
-  console.log(filter);
+  // console.log(filter);
+
+  if (collapsible) {
+    // console.log(collapsible);
+    const [itemId, rowId] = collapsible
+    console.log(itemId, rowId);
+  }
 
   // for hvert filter, sjekk om item har den key'en, og se om den er lik filter key'en
   const filteredItems = itemsInfo.filter(
@@ -112,42 +119,52 @@ const Main = ({ itemsInfo }) => {
         {filteredItems.map((item, index, array) => {
           // legg inn collapsible placeholder etter hvert fjerde element i filteredItems
           if (index + 1 === array.length) {
-            let rowId = rowCounter;
+            let letRowCount = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
+            let itemId, rowId
+            if (collapsible) {              
+              [itemId, rowId] = collapsible
+            }
+
             return (
               <Fragment key={item.id}>
                 <div
-                  onClick={() => openCollapsible(item.id, rowId)}
+                  onClick={() => setCollapsible([item.id, letRowCount])}
                   className="circle"
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible" id={rowId}>
-                  row {rowId} collapsible <h2>Tittel om denne</h2>
+                  {collapsible && <>Item no {itemId}: Row no {rowId}</>}
                 </div>
               </Fragment>
             );
           }
           if ((index + 1) % 4 === 0) {
-            let rowId = rowCounter;
+            let letRowCount = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
+            let itemId, rowId
+            if (collapsible) {              
+              [itemId, rowId] = collapsible
+            }
+
             return (
               <Fragment key={item.id}>
                 <div
-                  onClick={() => openCollapsible(item.id, rowId)}
+                  onClick={() => setCollapsible([item.id, letRowCount])}
                   className="circle"
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible" id={rowId}>
-                  row {rowId} collapsible<h2>Tittel om denne</h2>
+                {collapsible && <>Item no {itemId}: Row no {rowId}</>}
                 </div>
               </Fragment>
             );
           } else {
-            let rowId = rowCounter;
+            let letRowCount = rowCounter; // lagre en lokal (block scoped) kopi
             return (
               <div
                 key={item.id}
-                onClick={() => openCollapsible(item.id, rowId)}
+                onClick={() => setCollapsible([item.id, letRowCount])}
                 className="circle"
                 style={{ backgroundColor: item.color }}
               ></div>
@@ -160,9 +177,3 @@ const Main = ({ itemsInfo }) => {
 };
 
 export default Main;
-
-const openCollapsible = (itemid, rowId) => {
-  console.log(itemid, rowId);
-  const collapsible = document.getElementById(rowId)
-  collapsible.classList.toggle("visible")
-};
