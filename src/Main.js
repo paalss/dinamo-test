@@ -122,7 +122,7 @@ const Main = ({ itemsInfo }) => {
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible">
-                  row {rowCounter} collapsible <h2>Tittel om denne</h2>
+                  row {rowId} collapsible <h2>Tittel om denne</h2>
                 </div>
               </Fragment>
             );
@@ -138,7 +138,7 @@ const Main = ({ itemsInfo }) => {
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible">
-                  row {rowCounter} collapsible<h2>Tittel om denne</h2>
+                  row {rowId} collapsible<h2>Tittel om denne</h2>
                 </div>
               </Fragment>
             );
