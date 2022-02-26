@@ -129,42 +129,28 @@ const Main = ({ itemsInfo }) => {
           if (index + 1 === array.length) {
             let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
-            let itemId, rowId;
-            if (collapsible) {
-              [itemId, rowId] = collapsible;
-            }
 
             return (
               <Fragment key={item.id}>
                 {circle(item.id, item.color, letRowCounter)}
-                <div className="collapsible" id={rowId}>
-                  {collapsible && letRowCounter === rowId && (
-                    <>
-                      Item no {itemId}: Row no {rowId}
-                    </>
-                  )}
-                </div>
+                <CollapsiblePlaceholder
+                  content={collapsible}
+                  rowCount={letRowCounter}
+                />
               </Fragment>
             );
           }
           if ((index + 1) % 4 === 0) {
             let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
-            let itemId, rowId;
-            if (collapsible) {
-              [itemId, rowId] = collapsible;
-            }
 
             return (
               <Fragment key={item.id}>
                 {circle(item.id, item.color, letRowCounter)}
-                <div className="collapsible" id={rowId}>
-                  {collapsible && letRowCounter === rowId && (
-                    <>
-                      Item no {itemId}: Row no {rowId}
-                    </>
-                  )}
-                </div>
+                <CollapsiblePlaceholder
+                  content={collapsible}
+                  rowCount={letRowCounter}
+                />
               </Fragment>
             );
           } else {
@@ -178,3 +164,19 @@ const Main = ({ itemsInfo }) => {
 };
 
 export default Main;
+
+export const CollapsiblePlaceholder = ({ content, rowCount }) => {
+  let itemId, rowId;
+  if (content) {
+    [itemId, rowId] = content;
+  }
+  return (
+    <div className="collapsible" id={rowId}>
+      {content && rowCount === rowId && (
+        <>
+          Item no {itemId}: Row no {rowId}
+        </>
+      )}
+    </div>
+  );
+};
