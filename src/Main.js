@@ -121,7 +121,7 @@ const Main = ({ itemsInfo }) => {
                   className="circle"
                   style={{ backgroundColor: item.color }}
                 ></div>
-                <div className="collapsible">
+                <div className="collapsible" id={rowId}>
                   row {rowId} collapsible <h2>Tittel om denne</h2>
                 </div>
               </Fragment>
@@ -137,7 +137,7 @@ const Main = ({ itemsInfo }) => {
                   className="circle"
                   style={{ backgroundColor: item.color }}
                 ></div>
-                <div className="collapsible">
+                <div className="collapsible" id={rowId}>
                   row {rowId} collapsible<h2>Tittel om denne</h2>
                 </div>
               </Fragment>
@@ -161,6 +161,8 @@ const Main = ({ itemsInfo }) => {
 
 export default Main;
 
-const openCollapsible = (itemid, rowid) => {
-  console.log(itemid, rowid);
+const openCollapsible = (itemid, rowId) => {
+  console.log(itemid, rowId);
+  const collapsible = document.getElementById(rowId)
+  collapsible.classList.toggle("visible")
 };
