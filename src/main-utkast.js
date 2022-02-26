@@ -103,28 +103,23 @@ const Main = ({ itemsInfo }) => {
       </div>
       <div className="itemslist">
         {filteredItems.map((item) => {
+          let content = (
+            <div
+              key={item.id}
+              className="circle"
+              style={{ backgroundColor: item.color }}
+            ></div>
+          );
+          let collapsible = false;
           if (item.id % 4 === 0) {
-            return (
-              <>
-                <div
-                  key={item.id}
-                  className="circle"
-                  style={{ backgroundColor: item.color }}
-                ></div>
-                <div className="collapsible">
-                  collapsible<h2>Tittel om denne</h2>
-                </div>
-              </>
+            collapsible = (
+              <div className="collapsible">
+                collapsible<h2>Tittel om denne</h2>
+              </div>
             );
-          } else {
-            return (
-              <div
-                key={item.id}
-                className="circle"
-                style={{ backgroundColor: item.color }}
-              ></div>
-            );
+            content = content + collapsible;
           }
+          return content;
         })}
       </div>
     </main>

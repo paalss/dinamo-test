@@ -218,18 +218,7 @@ const items = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
-  },
-  {
-    id: 21,
-    title: "se på denne daaaa",
-    category: "apple",
-    color: "green",
-    intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
-    link: "https://somelink.com",
-  },
+  }
 ];
 
 export default items;
