@@ -1,19 +1,10 @@
 import { useState } from "react";
 
 const Main = ({ itemsInfo }) => {
-  // const [filter, setFilter] = useState([
-  //   { type: "color", attribute: "green", isOn: true },
-  //   { type: "color", attribute: "yellow", isOn: true },
-  //   { type: "color", attribute: "red", isOn: true },
-  //   { type: "fruit", attribute: "orange", isOn: true },
-  //   { type: "fruit", attribute: "carrot", isOn: true },
-  //   { type: "fruit", attribute: "fruit", isOn: true },
-  // ]);
   const [filter, setFilter] = useState({ color: "green", category: "orange" });
   console.log(filter);
 
   // for hvert filter, sjekk om item har den key'en, og se om den er lik filter key'en
-
   const filteredItems = itemsInfo.filter(
     (item) =>
       (filter === "all") ||
@@ -31,7 +22,6 @@ const Main = ({ itemsInfo }) => {
     } else {
       const incomingObj = incomingValue;
       // filter state må oppdateres
-
       // sjekk om filteret allerede har incoming object property verdi
       for (const prop in filter) {
         const incomingObjProp = incomingObj[Object.keys(incomingObj)[0]];
