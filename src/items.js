@@ -16,7 +16,7 @@ const items = [
     category: "orange",
     color: "brown",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "den beste ingressen",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -27,7 +27,7 @@ const items = [
     category: "orange",
     color: "orange",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "her står det masse fint",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -38,7 +38,7 @@ const items = [
     category: "carrot",
     color: "darkorange",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "her kommer litt tekst. sola sjø",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -49,7 +49,7 @@ const items = [
     category: "pare",
     color: "lightgreen",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "EEEEEEEEEEEEEEEEEEEEEEEEE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -60,7 +60,7 @@ const items = [
     category: "kiwi",
     color: "green",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "silksong",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -71,7 +71,7 @@ const items = [
     category: "mandarin",
     color: "yellow",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "hmmmmm",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -82,7 +82,7 @@ const items = [
     category: "apple",
     color: "red",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "epler dfausfnasfu foaif daif afoai fdao faof iafdoaf oai fod foa foda o foa fdoa faoif oaf oaf oaf oa foi daofmaof doaf oa fo",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -93,9 +93,9 @@ const items = [
     category: "apple",
     color: "red",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "men å heøller ikke ja men tja jo jo hei brus sugerør spill sovepute tastatur pennal pensel tusj skjerm bøker headset mus kladdebøker sikkerhetskopieringsdisk lampe brilleetui",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "Hallo på do hei på deg min venn",
     link: "https://somelink.com",
   },
   {
@@ -104,9 +104,9 @@ const items = [
     category: "apple",
     color: "red",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "Maling er gøy ja det er det",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "Hallo på do hei på deg min venn",
     link: "https://somelink.com",
   },
   {
@@ -115,9 +115,9 @@ const items = [
     category: "orange",
     color: "lightpink",
     intro:
-      "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
+      "masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst ",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "Hallo på do hei på deg min venn ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
     link: "https://somelink.com",
   },
   {
@@ -128,7 +128,7 @@ const items = [
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "Hallo på do hei på deg min venn ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
     link: "https://somelink.com",
   },
   {
@@ -139,7 +139,7 @@ const items = [
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
     link: "https://somelink.com",
   },
   {
@@ -150,7 +150,7 @@ const items = [
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
     link: "https://somelink.com",
   },
   {
@@ -161,7 +161,7 @@ const items = [
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
     link: "https://somelink.com",
   },
   {
@@ -183,7 +183,7 @@ const items = [
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
     link: "https://somelink.com",
   },
   {
@@ -194,7 +194,7 @@ const items = [
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
     link: "https://somelink.com",
   },
   {
@@ -205,7 +205,7 @@ const items = [
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
     link: "https://somelink.com",
   },
   {

@@ -2,13 +2,13 @@ import { Fragment, useState } from "react";
 
 const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState("all");
-  const [collapsible, setCollapsible] = useState(false)
+  const [collapsible, setCollapsible] = useState(false);
   let rowCounter = 1;
   // console.log(filter);
 
   if (collapsible) {
     // console.log(collapsible);
-    const [itemId, rowId] = collapsible
+    const [itemId, rowId] = collapsible;
     console.log(itemId, rowId);
   }
 
@@ -53,6 +53,14 @@ const Main = ({ itemsInfo }) => {
       });
     }
   };
+
+  const circle = (itemId, itemColor, rowId) => (
+    <div
+      onClick={() => setCollapsible([itemId, rowId])}
+      className="circle"
+      style={{ backgroundColor: itemColor }}
+    ></div>
+  );
 
   return (
     <main>
@@ -119,56 +127,49 @@ const Main = ({ itemsInfo }) => {
         {filteredItems.map((item, index, array) => {
           // legg inn collapsible placeholder etter hvert fjerde element i filteredItems
           if (index + 1 === array.length) {
-            let letRowCount = rowCounter; // lagre en lokal (block scoped) kopi
+            let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
-            let itemId, rowId
-            if (collapsible) {              
-              [itemId, rowId] = collapsible
+            let itemId, rowId;
+            if (collapsible) {
+              [itemId, rowId] = collapsible;
             }
 
             return (
               <Fragment key={item.id}>
-                <div
-                  onClick={() => setCollapsible([item.id, letRowCount])}
-                  className="circle"
-                  style={{ backgroundColor: item.color }}
-                ></div>
+                {circle(item.id, item.color, letRowCounter)}
                 <div className="collapsible" id={rowId}>
-                  {collapsible && letRowCount===rowId && <>Item no {itemId}: Row no {rowId}</>}
+                  {collapsible && letRowCounter === rowId && (
+                    <>
+                      Item no {itemId}: Row no {rowId}
+                    </>
+                  )}
                 </div>
               </Fragment>
             );
           }
           if ((index + 1) % 4 === 0) {
-            let letRowCount = rowCounter; // lagre en lokal (block scoped) kopi
+            let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
-            let itemId, rowId
-            if (collapsible) {              
-              [itemId, rowId] = collapsible
+            let itemId, rowId;
+            if (collapsible) {
+              [itemId, rowId] = collapsible;
             }
 
             return (
               <Fragment key={item.id}>
-                <div
-                  onClick={() => setCollapsible([item.id, letRowCount])}
-                  className="circle"
-                  style={{ backgroundColor: item.color }}
-                ></div>
+                {circle(item.id, item.color, letRowCounter)}
                 <div className="collapsible" id={rowId}>
-                {collapsible && letRowCount===rowId && <>Item no {itemId}: Row no {rowId}</>}
+                  {collapsible && letRowCounter === rowId && (
+                    <>
+                      Item no {itemId}: Row no {rowId}
+                    </>
+                  )}
                 </div>
               </Fragment>
             );
           } else {
-            let letRowCount = rowCounter; // lagre en lokal (block scoped) kopi
-            return (
-              <div
-                key={item.id}
-                onClick={() => setCollapsible([item.id, letRowCount])}
-                className="circle"
-                style={{ backgroundColor: item.color }}
-              ></div>
-            );
+            let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
+            return circle(item.id, item.color, letRowCounter);
           }
         })}
       </div>
