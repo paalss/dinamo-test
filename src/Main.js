@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState({ color: "green", category: "orange" });
+  let rowCounter = 0;
   console.log(filter);
 
   // for hvert filter, sjekk om item har den key'en, og se om den er lik filter key'en
@@ -102,12 +103,14 @@ const Main = ({ itemsInfo }) => {
         </button>
       </div>
       <div className="itemslist">
-        {filteredItems.map((item) => {
-          if (item.id % 4 === 0) {
+        {filteredItems.map((item, index) => {
+          // legg inn collapsible placeholder etter hvert fjerde element i filteredItems
+          if ((index + 1) % 4 === 0) {
+            rowCounter = rowCounter + 1;
             return (
               <>
                 <div
-                  key={item.id}
+                  onClick={() => openCollapsible(item.id, rowCounter)}
                   className="circle"
                   style={{ backgroundColor: item.color }}
                 ></div>
@@ -132,3 +135,7 @@ const Main = ({ itemsInfo }) => {
 };
 
 export default Main;
+
+const openCollapsible = (itemid, rowid) => {
+  console.log(itemid, rowid);
+};
