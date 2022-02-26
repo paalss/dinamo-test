@@ -34,9 +34,15 @@ const Main = ({ itemsInfo }) => {
         }
       }
 
+      // object property med den verdien finnes ikke
       setFilter((currentState) => {
-        // object property med den verdien finnes ikke, så bare overskriv obj prop med innkommende obj prop
-        return { ...currentState, ...incomingObj };
+        if (currentState === "all") {
+          // hvis state er "all", bare overskriv state
+          return incomingObj;
+        } else {
+          // hvis state heller inneholder et object med et filter, bare overskriv med innkommende prop
+          return { ...currentState, ...incomingObj };
+        }
       });
     }
   };
