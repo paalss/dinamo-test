@@ -134,7 +134,7 @@ const Main = ({ itemsInfo }) => {
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible" id={rowId}>
-                  {collapsible && <>Item no {itemId}: Row no {rowId}</>}
+                  {collapsible && letRowCount===rowId && <>Item no {itemId}: Row no {rowId}</>}
                 </div>
               </Fragment>
             );
@@ -155,7 +155,7 @@ const Main = ({ itemsInfo }) => {
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible" id={rowId}>
-                {collapsible && <>Item no {itemId}: Row no {rowId}</>}
+                {collapsible && letRowCount===rowId && <>Item no {itemId}: Row no {rowId}</>}
                 </div>
               </Fragment>
             );
