@@ -1,8 +1,8 @@
 import { Fragment, useState } from "react";
 
 const Main = ({ itemsInfo }) => {
-  const [filter, setFilter] = useState({ color: "green", category: "orange" });
-  let rowCounter = 0;
+  const [filter, setFilter] = useState("all");
+  let rowCounter = 1;
   console.log(filter);
 
   // for hvert filter, sjekk om item har den key'en, og se om den er lik filter key'en
@@ -111,38 +111,43 @@ const Main = ({ itemsInfo }) => {
       <div className="itemslist">
         {filteredItems.map((item, index, array) => {
           // legg inn collapsible placeholder etter hvert fjerde element i filteredItems
-          if ((index+1)===array.length) {
+          if (index + 1 === array.length) {
+            let rowId = rowCounter;
+            rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
             return (
               <Fragment key={item.id}>
                 <div
-                  onClick={() => openCollapsible(item.id, rowCounter)}
+                  onClick={() => openCollapsible(item.id, rowId)}
                   className="circle"
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible">
-                  collapsible<h2>Tittel om denne</h2>
+                  row {rowCounter} collapsible <h2>Tittel om denne</h2>
                 </div>
               </Fragment>
             );
           }
           if ((index + 1) % 4 === 0) {
-            rowCounter = rowCounter + 1;
+            let rowId = rowCounter;
+            rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
             return (
               <Fragment key={item.id}>
                 <div
-                  onClick={() => openCollapsible(item.id, rowCounter)}
+                  onClick={() => openCollapsible(item.id, rowId)}
                   className="circle"
                   style={{ backgroundColor: item.color }}
                 ></div>
                 <div className="collapsible">
-                  collapsible<h2>Tittel om denne</h2>
+                  row {rowCounter} collapsible<h2>Tittel om denne</h2>
                 </div>
               </Fragment>
             );
           } else {
+            let rowId = rowCounter;
             return (
               <div
                 key={item.id}
+                onClick={() => openCollapsible(item.id, rowId)}
                 className="circle"
                 style={{ backgroundColor: item.color }}
               ></div>
