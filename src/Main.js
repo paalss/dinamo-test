@@ -109,8 +109,22 @@ const Main = ({ itemsInfo }) => {
         </button>
       </div>
       <div className="itemslist">
-        {filteredItems.map((item, index) => {
+        {filteredItems.map((item, index, array) => {
           // legg inn collapsible placeholder etter hvert fjerde element i filteredItems
+          if ((index+1)===array.length) {
+            return (
+              <Fragment key={item.id}>
+                <div
+                  onClick={() => openCollapsible(item.id, rowCounter)}
+                  className="circle"
+                  style={{ backgroundColor: item.color }}
+                ></div>
+                <div className="collapsible">
+                  collapsible<h2>Tittel om denne</h2>
+                </div>
+              </Fragment>
+            );
+          }
           if ((index + 1) % 4 === 0) {
             rowCounter = rowCounter + 1;
             return (
