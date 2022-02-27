@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
-import Circle from "./Circle";
-import Collapsible from "./Collapsible";
+import Circle from "./components/Circle";
+import Collapsible from "./components/Collapsible";
 
 const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState("all");

@@ -1,5 +1,5 @@
 import classes from "./Collapsible.module.css";
-import Circle from "./Circle";
+import Circle from "../Circle";
 
 const Collapsible = ({ content, rowCount }) => {
   let item, rowId;
