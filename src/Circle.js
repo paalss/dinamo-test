@@ -1,9 +1,14 @@
 import classes from "./Circle.module.css";
 
-const Circle = ({ item, rowId = false, onSetValues = false }) => {
+const Circle = ({
+  item,
+  rowId = false,
+  onSetValues = false,
+  isInCollapsible = false,
+}) => {
   // console.log(item.id, rowId)
   // console.log(onSetValues)
-  if (onSetValues) {
+  if (!isInCollapsible) {
     // denne sirkelen rendres i listen
     // debugger
     return (
@@ -18,7 +23,7 @@ const Circle = ({ item, rowId = false, onSetValues = false }) => {
   return (
     <div
       // Denne er i Collapsible og skal ikke være klikkbar
-      className={classes.circle}
+      className={classes.bigCircle}
       style={{ backgroundColor: item.color }}
     ></div>
   );

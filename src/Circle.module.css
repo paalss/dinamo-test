@@ -3,3 +3,9 @@
   height: 300px;
   border-radius: 160px;
 }
+
+.bigCircle {
+  width: 450px;
+  height: 450px;
+  border-radius: 270px;
+}
