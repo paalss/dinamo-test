@@ -9,8 +9,8 @@ const Main = ({ itemsInfo }) => {
 
   if (collapsibleValues) {
     // console.log(collapsibleValues);
-    const [itemId, rowId] = collapsibleValues;
-    console.log(itemId, rowId);
+    const [item, rowId] = collapsibleValues;
+    console.log(item.id, rowId);
   }
 
   // for hvert filter, sjekk om item har den key'en, og se om den er lik filter key'en
@@ -57,7 +57,7 @@ const Main = ({ itemsInfo }) => {
 
   const circle = (item, rowId) => (
     <div
-      onClick={() => setCollapsibleValues([item.id, rowId])}
+      onClick={() => setCollapsibleValues([item, rowId])}
       className="circle"
       style={{ backgroundColor: item.color }}
     ></div>
@@ -142,7 +142,9 @@ const Main = ({ itemsInfo }) => {
             );
           } else {
             let letRowCounter = rowCounter; // setState i circle trenger en lokal variabel for akkurat denne iterasjonen
-            return circle(item, letRowCounter);
+            return (
+              <Fragment key={item.id}>{circle(item, letRowCounter)}</Fragment>
+            );
           }
         })}
       </div>
