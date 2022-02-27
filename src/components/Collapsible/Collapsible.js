@@ -26,7 +26,7 @@ const Collapsible = ({ content, rowCount }) => {
             </div>
             <div>
               <p className={classes.intro}>{item.intro}</p>
-              <p>{item.description}</p>
+              <p className={classes.description}>{item.description}</p>
               <a href={item.link}>Les mer om {item.title}</a>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Collapsible = ({ content, rowCount }) => {
       </div>
     );
   } else {
-    return <div></div>;
+    return <div className={classes.closedCollapsible}></div>;
   }
 };
 

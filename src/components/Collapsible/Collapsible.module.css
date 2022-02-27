@@ -14,12 +14,20 @@
 
 .collapsible {
   padding: 45px 10%;
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(245, 245, 245);
   flex-basis: 100%;
   /* display: none; */
+}
+
+.closedCollapsible {
+  flex-basis: 100%;
 }
 
 .intro {
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+.description {
+  color: rgb(49, 49, 49);
 }
