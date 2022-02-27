@@ -126,21 +126,7 @@ const Main = ({ itemsInfo }) => {
       <div className="itemslist">
         {filteredItems.map((item, index, array) => {
           // legg inn collapsible placeholder etter hvert fjerde element i filteredItems
-          if (index + 1 === array.length) {
-            let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
-            rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
-
-            return (
-              <Fragment key={item.id}>
-                {circle(item.id, item.color, letRowCounter)}
-                <CollapsiblePlaceholder
-                  content={collapsible}
-                  rowCount={letRowCounter}
-                />
-              </Fragment>
-            );
-          }
-          if ((index + 1) % 4 === 0) {
+          if (index + 1 === array.length || (index + 1) % 4 === 0) {
             let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
 
