@@ -55,11 +55,11 @@ const Main = ({ itemsInfo }) => {
     }
   };
 
-  const circle = (itemId, itemColor, rowId) => (
+  const circle = (item, rowId) => (
     <div
-      onClick={() => setCollapsibleValues([itemId, rowId])}
+      onClick={() => setCollapsibleValues([item.id, rowId])}
       className="circle"
-      style={{ backgroundColor: itemColor }}
+      style={{ backgroundColor: item.color }}
     ></div>
   );
 
@@ -129,12 +129,11 @@ const Main = ({ itemsInfo }) => {
           // etter hvert fjerde element i filteredItems, legg inn collapsible
           // også etter den siste i arrayen
           if ((index + 1) % 4 === 0 || index + 1 === array.length) {
-            let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
+            let letRowCounter = rowCounter; // setState i circle trenger en lokal variabel for akkurat denne iterasjonen
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
-
             return (
               <Fragment key={item.id}>
-                {circle(item.id, item.color, letRowCounter)}
+                {circle(item, letRowCounter)}
                 <Collapsible
                   content={collapsibleValues}
                   rowCount={letRowCounter}
@@ -142,8 +141,8 @@ const Main = ({ itemsInfo }) => {
               </Fragment>
             );
           } else {
-            let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
-            return circle(item.id, item.color, letRowCounter);
+            let letRowCounter = rowCounter; // setState i circle trenger en lokal variabel for akkurat denne iterasjonen
+            return circle(item, letRowCounter);
           }
         })}
       </div>

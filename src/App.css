@@ -28,14 +28,3 @@ footer {
   color: #fff;
   background-color: blue;
 }
-
-.collapsible {
-  padding: 15px;
-  background-color: rgb(211, 211, 211);
-  flex-basis: 100%;
-  /* display: none; */
-}
-
-/* .visible {
-  display: block;
-} */
