@@ -1,14 +1,15 @@
 import { Fragment, useState } from "react";
+import Collapsible from "./Collapsible";
 
 const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState("all");
-  const [collapsible, setCollapsible] = useState(false);
+  const [collapsibleValues, setCollapsibleValues] = useState(false);
   let rowCounter = 1;
   // console.log(filter);
 
-  if (collapsible) {
-    // console.log(collapsible);
-    const [itemId, rowId] = collapsible;
+  if (collapsibleValues) {
+    // console.log(collapsibleValues);
+    const [itemId, rowId] = collapsibleValues;
     console.log(itemId, rowId);
   }
 
@@ -56,7 +57,7 @@ const Main = ({ itemsInfo }) => {
 
   const circle = (itemId, itemColor, rowId) => (
     <div
-      onClick={() => setCollapsible([itemId, rowId])}
+      onClick={() => setCollapsibleValues([itemId, rowId])}
       className="circle"
       style={{ backgroundColor: itemColor }}
     ></div>
@@ -125,16 +126,17 @@ const Main = ({ itemsInfo }) => {
       </div>
       <div className="itemslist">
         {filteredItems.map((item, index, array) => {
-          // legg inn collapsible placeholder etter hvert fjerde element i filteredItems
-          if (index + 1 === array.length || (index + 1) % 4 === 0) {
+          // etter hvert fjerde element i filteredItems, legg inn collapsible
+          // også etter den siste i arrayen
+          if ((index + 1) % 4 === 0 || index + 1 === array.length) {
             let letRowCounter = rowCounter; // lagre en lokal (block scoped) kopi
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
 
             return (
               <Fragment key={item.id}>
                 {circle(item.id, item.color, letRowCounter)}
-                <CollapsiblePlaceholder
-                  content={collapsible}
+                <Collapsible
+                  content={collapsibleValues}
                   rowCount={letRowCounter}
                 />
               </Fragment>
@@ -150,19 +152,3 @@ const Main = ({ itemsInfo }) => {
 };
 
 export default Main;
-
-export const CollapsiblePlaceholder = ({ content, rowCount }) => {
-  let itemId, rowId;
-  if (content) {
-    [itemId, rowId] = content;
-  }
-  return (
-    <div className="collapsible" id={rowId}>
-      {content && rowCount === rowId && (
-        <>
-          Item no {itemId}: Row no {rowId}
-        </>
-      )}
-    </div>
-  );
-};
