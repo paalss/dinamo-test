@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+import Circle from "./Circle";
 import Collapsible from "./Collapsible";
 
 const Main = ({ itemsInfo }) => {
@@ -55,13 +56,9 @@ const Main = ({ itemsInfo }) => {
     }
   };
 
-  const circle = (item, rowId) => (
-    <div
-      onClick={() => setCollapsibleValues([item, rowId])}
-      className="circle"
-      style={{ backgroundColor: item.color }}
-    ></div>
-  );
+  const setValuesHandler = (item, rowId) => {
+    setCollapsibleValues([item, rowId]);
+  };
 
   return (
     <main>
@@ -133,7 +130,11 @@ const Main = ({ itemsInfo }) => {
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
             return (
               <Fragment key={item.id}>
-                {circle(item, letRowCounter)}
+                <Circle
+                  item={item}
+                  rowId={letRowCounter}
+                  onSetValues={setValuesHandler}
+                />
                 <Collapsible
                   content={collapsibleValues}
                   rowCount={letRowCounter}
@@ -143,7 +144,13 @@ const Main = ({ itemsInfo }) => {
           } else {
             let letRowCounter = rowCounter; // setState i circle trenger en lokal variabel for akkurat denne iterasjonen
             return (
-              <Fragment key={item.id}>{circle(item, letRowCounter)}</Fragment>
+              <Fragment key={item.id}>
+                <Circle
+                  item={item}
+                  rowId={letRowCounter}
+                  onSetValues={setValuesHandler}
+                />
+              </Fragment>
             );
           }
         })}

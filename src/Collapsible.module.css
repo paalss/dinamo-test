@@ -1,9 +1,19 @@
 .row {
+  display: flex;
+}
 
+.row>div {
+  flex-basis: 50%;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  /* align-content: flex-end; */
 }
 
 .collapsible {
-  padding: 15px;
+  padding: 45px 10%;
   background-color: rgb(211, 211, 211);
   flex-basis: 100%;
   /* display: none; */

@@ -1,4 +1,5 @@
 import classes from "./Collapsible.module.css";
+import Circle from "./Circle";
 
 const Collapsible = ({ content, rowCount }) => {
   let item, rowId;
@@ -11,9 +12,15 @@ const Collapsible = ({ content, rowCount }) => {
         <>
           Item no {item.id}: Row no {rowId}
           <div className={classes.row}>
-            <h2></h2>
+            <div>
+              <h2>{item.title}</h2>
+              <p>{item.category}</p>
+            </div>
+            <div className={classes.right}>X</div>
           </div>
-          <div className={classes.row}></div>
+          <div className={classes.row}>
+            <Circle item={item}/>
+          </div>
           <div className={classes.row}></div>
         </>
       )}
