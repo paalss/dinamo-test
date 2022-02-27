@@ -15,10 +15,9 @@ const items = [
     title: "fdasfaasfsafa",
     category: "orange",
     color: "brown",
-    intro:
-      "den beste ingressen",
+    intro: "den beste ingressen",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
   },
   {
@@ -26,8 +25,7 @@ const items = [
     title: "orange",
     category: "orange",
     color: "orange",
-    intro:
-      "her står det masse fint",
+    intro: "her står det masse fint",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -37,10 +35,9 @@ const items = [
     title: "tittel på denne her",
     category: "carrot",
     color: "darkorange",
-    intro:
-      "her kommer litt tekst. sola sjø",
+    intro: "her kommer litt tekst. sola sjø",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi.",
     link: "https://somelink.com",
   },
   {
@@ -48,8 +45,7 @@ const items = [
     title: "hmmmmmm",
     category: "pare",
     color: "lightgreen",
-    intro:
-      "EEEEEEEEEEEEEEEEEEEEEEEEE",
+    intro: "EEEEEEEEEEEEEEEEEEEEEEEEE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -59,8 +55,7 @@ const items = [
     title: "en annen tittel",
     category: "kiwi",
     color: "green",
-    intro:
-      "silksong",
+    intro: "silksong",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -70,8 +65,7 @@ const items = [
     title: "heiiiii",
     category: "mandarin",
     color: "yellow",
-    intro:
-      "hmmmmm",
+    intro: "hmmmmm",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
@@ -94,8 +88,7 @@ const items = [
     color: "red",
     intro:
       "men å heøller ikke ja men tja jo jo hei brus sugerør spill sovepute tastatur pennal pensel tusj skjerm bøker headset mus kladdebøker sikkerhetskopieringsdisk lampe brilleetui",
-    description:
-      "Hallo på do hei på deg min venn",
+    description: "Hallo på do hei på deg min venn",
     link: "https://somelink.com",
   },
   {
@@ -103,10 +96,8 @@ const items = [
     title: "se på denne da",
     category: "apple",
     color: "red",
-    intro:
-      "Maling er gøy ja det er det",
-    description:
-      "Hallo på do hei på deg min venn",
+    intro: "Maling er gøy ja det er det",
+    description: "Hallo på do hei på deg min venn",
     link: "https://somelink.com",
   },
   {
@@ -116,8 +107,7 @@ const items = [
     color: "lightpink",
     intro:
       "masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst ",
-    description:
-      "Hallo på do hei på deg min venn ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
+    description: "Hallo på do hei på deg min venn ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
     link: "https://somelink.com",
   },
   {
@@ -127,8 +117,7 @@ const items = [
     color: "brown",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
-    description:
-      "Hallo på do hei på deg min venn ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
+    description: "Hallo på do hei på deg min venn ÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ",
     link: "https://somelink.com",
   },
   {
@@ -160,8 +149,7 @@ const items = [
     color: "lightgreen",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
-    description:
-      "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+    description: "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
     link: "https://somelink.com",
   },
   {
@@ -182,8 +170,7 @@ const items = [
     color: "yellow",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
-    description:
-      "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
+    description: "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
     link: "https://somelink.com",
   },
   {
@@ -193,8 +180,7 @@ const items = [
     color: "red",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
-    description:
-      "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
+    description: "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
     link: "https://somelink.com",
   },
   {
@@ -204,8 +190,7 @@ const items = [
     color: "red",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
-    description:
-      "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
+    description: "hei hallo hadet gåtur spaserstokk truger ski sko sokker",
     link: "https://somelink.com",
   },
   {
@@ -218,7 +203,7 @@ const items = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum aspernatur quibusdam temporibus illum nisi obcaecati quo magnam blanditiis sequi perspiciatis. Neque non mollitia quis pariatur dolorem, quo commodi ad excepturi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic reprehenderit ullam eveniet quia, ipsa dolorum quisquam? Perspiciatis tempora et vero.",
     link: "https://somelink.com",
-  }
+  },
 ];
 
 export default items;
