@@ -19,7 +19,10 @@ const Collapsible = ({ content, rowCount }) => {
             <div className={classes.right}>X</div>
           </div>
           <div className={classes.row}>
-            <Circle item={item}/>
+            {/* children av div.row får flex basis 50% */}
+            <div> {/* denne div'en er her for at sirkelen ikke skal bli avlang */}
+              <Circle item={item} />
+            </div>
           </div>
           <div className={classes.row}></div>
         </>
