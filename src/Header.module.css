@@ -1,0 +1,23 @@
+.header {
+  background-color: gray;
+  padding: 10px 2%;
+  height: 530px;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: #eee;
+  border-radius: 200px;
+}
+
+div.title {
+  display: flex;
+  align-items: flex-end;
+  height: 60%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
