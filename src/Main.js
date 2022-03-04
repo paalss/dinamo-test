@@ -64,59 +64,59 @@ const Main = ({ itemsInfo }) => {
         cumque! Voluptatibus, rerum doloremque laboriosam nostrum tenetur
         distinctio similique quidem.
       </p>
-      <div className="filterlist">
+      <div className={classes.filterlist}>
         <button
-          className={filter === "all" ? "active" : ""}
+          className={filter === "all" ? classes.active : ""}
           onClick={() => toggle("all")}
         >
           Vis alle
         </button>
         <b>color</b>
         <button
-          className={filter.color === "green" ? "active" : ""}
+          className={filter.color === "green" ? classes.active : ""}
           onClick={() => toggle({ color: "green" })}
         >
           Green
         </button>
         <button
-          className={filter.color === "yellow" ? "active" : ""}
+          className={filter.color === "yellow" ? classes.active : ""}
           onClick={() => toggle({ color: "yellow" })}
         >
           Yellow
         </button>
         <button
-          className={filter.color === "red" ? "active" : ""}
+          className={filter.color === "red" ? classes.active : ""}
           onClick={() => toggle({ color: "red" })}
         >
           Red
         </button>{" "}
         <b>Category</b>
         <button
-          className={filter.category === "apple" ? "active" : ""}
+          className={filter.category === "apple" ? classes.active : ""}
           onClick={() => toggle({ category: "apple" })}
         >
           Apple
         </button>
         <button
-          className={filter.category === "orange" ? "active" : ""}
+          className={filter.category === "orange" ? classes.active : ""}
           onClick={() => toggle({ category: "orange" })}
         >
           Orange
         </button>
         <button
-          className={filter.category === "carrot" ? "active" : ""}
+          className={filter.category === "carrot" ? classes.active : ""}
           onClick={() => toggle({ category: "carrot" })}
         >
           Carrot
         </button>
         <button
-          className={filter.category === "kiwi" ? "active" : ""}
+          className={filter.category === "kiwi" ? classes.active : ""}
           onClick={() => toggle({ category: "kiwi" })}
         >
           Kiwi
         </button>
       </div>
-      <div className="itemslist">
+      <div className={classes.itemslist}>
         {filteredItems.map((item, index, array) => {
           // etter hvert fjerde element i filteredItems, legg inn collapsible
           // også etter den siste i arrayen

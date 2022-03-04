@@ -1,11 +1,24 @@
-.main {
-  /* padding: 0 10%; */
-}
-
 .intro {
   font-size: 1.2rem;
 }
 
 .smalltitle {
   color: rgb(77, 29, 122);
+}
+
+.filterlist {
+  display: flex;
+  column-gap: 20px;
+}
+
+.itemslist {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.active {
+  color: #fff;
+  background-color: blue;
 }

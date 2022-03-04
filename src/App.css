@@ -2,23 +2,6 @@ footer {
   background-color: darkred;
 }
 
-.filterlist {
-  display: flex;
-  column-gap: 20px;
-}
-
-.itemslist {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 30px;
-}
-
-.active {
-  color: #fff;
-  background-color: blue;
-}
-
 .container {
   padding: 30px 5%;
 }
