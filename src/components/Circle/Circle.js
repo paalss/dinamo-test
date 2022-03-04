@@ -3,14 +3,14 @@ import classes from "./Circle.module.css";
 const Circle = ({
   item,
   rowId = false,
-  onSetValues = false,
+  onSelect = false,
   isInCollapsible = false,
 }) => {
   if (!isInCollapsible) {
     return (
       <div
         // denne sirkelen rendres i listen
-        onClick={() => onSetValues(item, rowId)}
+        onClick={() => onSelect(item, rowId)}
         className={classes.circle}
         style={{ backgroundColor: item.color }}
       ></div>

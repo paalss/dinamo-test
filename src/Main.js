@@ -51,9 +51,13 @@ const Main = ({ itemsInfo }) => {
     }
   };
 
-  const setValuesHandler = (item, rowId) => {
+  const openCollapsibleHandler = (item, rowId) => {
     setCollapsibleValues([item, rowId]);
   };
+
+  const closeCollapsibleHandler=()=>{
+    setCollapsibleValues(false)
+  }
 
   const activeClassWhenFilterIs = (activeFilter, type) => {
     if (activeFilter === "all") {
@@ -135,11 +139,12 @@ const Main = ({ itemsInfo }) => {
                 <Circle
                   item={item}
                   rowId={letRowCounter}
-                  onSetValues={setValuesHandler}
+                  onSelect={openCollapsibleHandler}
                 />
                 <Collapsible
                   content={collapsibleValues}
                   rowCount={letRowCounter}
+                  onClose={closeCollapsibleHandler}
                 />
               </Fragment>
             );
@@ -150,7 +155,7 @@ const Main = ({ itemsInfo }) => {
                 <Circle
                   item={item}
                   rowId={letRowCounter}
-                  onSetValues={setValuesHandler}
+                  onSelect={openCollapsibleHandler}
                 />
               </Fragment>
             );

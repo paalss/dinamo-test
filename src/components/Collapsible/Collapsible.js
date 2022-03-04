@@ -1,7 +1,7 @@
 import classes from "./Collapsible.module.css";
 import Circle from "../Circle";
 
-const Collapsible = ({ content, rowCount }) => {
+const Collapsible = ({ content, rowCount, onClose }) => {
   let item, rowId;
   if (content) {
     [item, rowId] = content;
@@ -20,7 +20,7 @@ const Collapsible = ({ content, rowCount }) => {
               </p>
             </div>
             <div className={classes.right}>
-              <button className="reset-button-style">X</button>
+              <button className="reset-button-style" onClick={onClose}>X</button>
             </div>
           </div>
           <div className={classes.row}>
