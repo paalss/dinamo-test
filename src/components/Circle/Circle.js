@@ -6,20 +6,16 @@ const Circle = ({
   onSetValues = false,
   isInCollapsible = false,
 }) => {
-  // console.log(item.id, rowId)
-  // console.log(onSetValues)
   if (!isInCollapsible) {
-    // denne sirkelen rendres i listen
-    // debugger
     return (
       <div
+        // denne sirkelen rendres i listen
         onClick={() => onSetValues(item, rowId)}
         className={classes.circle}
         style={{ backgroundColor: item.color }}
       ></div>
     );
   }
-  // debugger
   return (
     <div
       // Denne er i Collapsible og skal ikke være klikkbar

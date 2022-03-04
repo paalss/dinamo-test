@@ -6,13 +6,6 @@ const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState("all");
   const [collapsibleValues, setCollapsibleValues] = useState(false);
   let rowCounter = 1;
-  // console.log(filter);
-
-  if (collapsibleValues) {
-    // console.log(collapsibleValues);
-    const [item, rowId] = collapsibleValues;
-    console.log(item.id, rowId);
-  }
 
   // for hvert filter, sjekk om item har den key'en, og se om den er lik filter key'en
   const filteredItems = itemsInfo.filter(
@@ -125,8 +118,9 @@ const Main = ({ itemsInfo }) => {
         {filteredItems.map((item, index, array) => {
           // etter hvert fjerde element i filteredItems, legg inn collapsible
           // også etter den siste i arrayen
-          if ((index + 1) % 4 === 0 || index + 1 === array.length) {
-            let letRowCounter = rowCounter; // setState i circle trenger en lokal variabel for akkurat denne iterasjonen
+          const circleNo = index + 1;
+          if (circleNo % 4 === 0 || circleNo === array.length) {
+            let letRowCounter = rowCounter; // setState i Circle trenger en lokal variabel for akkurat denne iterasjonen
             rowCounter = rowCounter + 1; // øk antall rad, men ikke bruk denne verdien før neste iterasjon
             return (
               <Fragment key={item.id}>
@@ -142,7 +136,7 @@ const Main = ({ itemsInfo }) => {
               </Fragment>
             );
           } else {
-            let letRowCounter = rowCounter; // setState i circle trenger en lokal variabel for akkurat denne iterasjonen
+            let letRowCounter = rowCounter; // setState i Circle trenger en lokal variabel for akkurat denne iterasjonen
             return (
               <Fragment key={item.id}>
                 <Circle
