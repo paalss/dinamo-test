@@ -2,6 +2,7 @@
   padding: 30px 5%;
 }
 
+/* lilla button style */
 .button {
   padding: 8px 15px;
   background-color: #fff;
@@ -14,7 +15,11 @@ a.button {
   text-decoration: none;
 }
 
-.button-active {
+button {
+  cursor: pointer;
+}
+
+.button-active, .button:hover {
   color: #fff;
   background-color: #4d1d7a;
 }
