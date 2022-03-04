@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
-import Circle from "./components/Circle";
-import Collapsible from "./components/Collapsible";
+import Circle from "../../common/Circle";
+import Collapsible from "../../common/Collapsible";
 
 import classes from "./Main.module.css";
 
