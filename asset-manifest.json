@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dinamo-test/static/css/main.0f4f335c.css",
+    "main.js": "/dinamo-test/static/js/main.89a18b98.js",
+    "static/js/787.28cb0dcd.chunk.js": "/dinamo-test/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/dinamo-test/index.html",
+    "main.0f4f335c.css.map": "/dinamo-test/static/css/main.0f4f335c.css.map",
+    "main.89a18b98.js.map": "/dinamo-test/static/js/main.89a18b98.js.map",
+    "787.28cb0dcd.chunk.js.map": "/dinamo-test/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f4f335c.css",
+    "static/js/main.89a18b98.js"
+  ]
+}
