@@ -1,3 +1,15 @@
+# Dinamo test
+
+Brukte så mye som: 11 timer og 19 min
+
+```
+npm install
+npm start
+```
+
+---------------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
