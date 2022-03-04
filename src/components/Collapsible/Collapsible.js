@@ -20,7 +20,7 @@ const Collapsible = ({ content, rowCount, onClose }) => {
               </p>
             </div>
             <div className={classes.right}>
-              <button className="reset-button-style" onClick={onClose}>X</button>
+              <button className="reset-button-style cross" onClick={onClose}></button>
             </div>
           </div>
           <div className={classes.row}>

@@ -27,3 +27,10 @@ a.button {
   background: none;
   border: none;
 }
+
+/* close icon */
+.cross:after {
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  font-size: 50px;
+}
