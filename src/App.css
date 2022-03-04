@@ -5,3 +5,16 @@ footer {
 .container {
   padding: 30px 5%;
 }
+
+button {
+  padding: 8px 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #4d1d7a;
+  border: 1px solid #4d1d7a;
+}
+
+.button-active {
+  color: #fff;
+  background-color: #4d1d7a;
+}

@@ -60,57 +60,55 @@ const Main = ({ itemsInfo }) => {
       <p className={classes.smalltitle}>Stikktittel</p>
       <p className={classes.intro}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-        numquam tempora, iste assumenda quos eius quas labore doloribus rem at
-        cumque! Voluptatibus, rerum doloremque laboriosam nostrum tenetur
-        distinctio similique quidem.
+        numquam tempora, iste assumenda
       </p>
       <div className={classes.filterlist}>
         <button
-          className={filter === "all" ? classes.active : ""}
+          className={filter === "all" ? 'button-active' : ""}
           onClick={() => toggle("all")}
         >
           Vis alle
         </button>
-        <b>color</b>
+        <b>Farge</b>
         <button
-          className={filter.color === "green" ? classes.active : ""}
+          className={filter.color === "green" ? 'button-active' : ""}
           onClick={() => toggle({ color: "green" })}
         >
-          Green
+          Grønn
         </button>
         <button
-          className={filter.color === "yellow" ? classes.active : ""}
+          className={filter.color === "yellow" ? 'button-active' : ""}
           onClick={() => toggle({ color: "yellow" })}
         >
-          Yellow
+          Gul
         </button>
         <button
-          className={filter.color === "red" ? classes.active : ""}
+          className={filter.color === "red" ? 'button-active' : ""}
           onClick={() => toggle({ color: "red" })}
         >
-          Red
+          Rød
         </button>{" "}
-        <b>Category</b>
+        <b>Kategori</b>
         <button
-          className={filter.category === "apple" ? classes.active : ""}
-          onClick={() => toggle({ category: "apple" })}
+          className={filter.category === "eple" ? 'button-active' : ""}
+          onClick={() => toggle({ category: "eple" })}
         >
-          Apple
+          eple
         </button>
         <button
-          className={filter.category === "orange" ? classes.active : ""}
-          onClick={() => toggle({ category: "orange" })}
+          className={filter.category === "appelsin" ? 'button-active' : ""}
+          onClick={() => toggle({ category: "appelsin" })}
         >
-          Orange
+          appelsin
         </button>
         <button
-          className={filter.category === "carrot" ? classes.active : ""}
-          onClick={() => toggle({ category: "carrot" })}
+          className={filter.category === "gulrot" ? 'button-active' : ""}
+          onClick={() => toggle({ category: "gulrot" })}
         >
-          Carrot
+          gulrot
         </button>
         <button
-          className={filter.category === "kiwi" ? classes.active : ""}
+          className={filter.category === "kiwi" ? 'button-active' : ""}
           onClick={() => toggle({ category: "kiwi" })}
         >
           Kiwi
@@ -151,6 +149,7 @@ const Main = ({ itemsInfo }) => {
           }
         })}
       </div>
+      <button>Vis flere</button>
     </main>
   );
 };

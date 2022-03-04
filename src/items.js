@@ -2,7 +2,7 @@ const items = [
   {
     id: 1,
     title: "eeeee",
-    category: "apple",
+    category: "eple",
     color: "lightpink",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
@@ -13,7 +13,7 @@ const items = [
   {
     id: 2,
     title: "fdasfaasfsafa",
-    category: "orange",
+    category: "appelsin",
     color: "brown",
     intro: "den beste ingressen",
     description:
@@ -23,7 +23,7 @@ const items = [
   {
     id: 3,
     title: "orange",
-    category: "orange",
+    category: "appelsin",
     color: "orange",
     intro: "her står det masse fint",
     description:
@@ -33,7 +33,7 @@ const items = [
   {
     id: 4,
     title: "tittel på denne her",
-    category: "carrot",
+    category: "gulrot",
     color: "darkorange",
     intro: "her kommer litt tekst. sola sjø",
     description:
@@ -73,7 +73,7 @@ const items = [
   {
     id: 8,
     title: "se på denne da",
-    category: "apple",
+    category: "eple",
     color: "red",
     intro:
       "epler dfausfnasfu foaif daif afoai fdao faof iafdoaf oai fod foa foda o foa fdoa faoif oaf oaf oaf oa foi daofmaof doaf oa fo",
@@ -84,7 +84,7 @@ const items = [
   {
     id: 9,
     title: "se på denne da",
-    category: "apple",
+    category: "drue",
     color: "red",
     intro:
       "men å heøller ikke ja men tja jo jo hei brus sugerør spill sovepute tastatur pennal pensel tusj skjerm bøker headset mus kladdebøker sikkerhetskopieringsdisk lampe brilleetui",
@@ -94,7 +94,7 @@ const items = [
   {
     id: 10,
     title: "se på denne da",
-    category: "apple",
+    category: "eple",
     color: "red",
     intro: "Maling er gøy ja det er det",
     description: "Hallo på do hei på deg min venn",
@@ -103,7 +103,7 @@ const items = [
   {
     id: 11,
     title: "eeeee",
-    category: "orange",
+    category: "drue",
     color: "lightpink",
     intro:
       "masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst masse tulletekst ",
@@ -113,7 +113,7 @@ const items = [
   {
     id: 12,
     title: "fdasfaasfsafa",
-    category: "orange",
+    category: "ananas",
     color: "brown",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
@@ -123,7 +123,7 @@ const items = [
   {
     id: 13,
     title: "orange",
-    category: "orange",
+    category: "tomat",
     color: "orange",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
@@ -134,7 +134,7 @@ const items = [
   {
     id: 14,
     title: "tittel på denne her",
-    category: "carrot",
+    category: "noeannet",
     color: "darkorange",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
@@ -176,7 +176,7 @@ const items = [
   {
     id: 18,
     title: "se på denne da",
-    category: "apple",
+    category: "eple",
     color: "red",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
@@ -186,7 +186,7 @@ const items = [
   {
     id: 19,
     title: "se på denne da",
-    category: "apple",
+    category: "eple",
     color: "red",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
@@ -196,7 +196,7 @@ const items = [
   {
     id: 20,
     title: "å se på den",
-    category: "apple",
+    category: "eple",
     color: "green",
     intro:
       "lorem ipsum lorem ipsum lorem ipsum v vlorem ipsum lorem ipsum lorem ipsum",
