@@ -2,6 +2,12 @@
 
 Brukte så mye som: 11 timer og 19 min
 
+## Åpne offentlig nettside
+
+https://paalss.github.io/dinamo-test/
+
+## Åpne lokalt
+
 ```
 npm install
 npm start
