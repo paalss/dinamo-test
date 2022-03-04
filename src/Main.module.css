@@ -3,12 +3,27 @@
 }
 
 .smalltitle {
-  color: rgb(77, 29, 122);
+  color: #4d1d7a;
 }
 
 .filterlist {
+  margin-top: 100px;
+  margin-bottom: 40px;
   display: flex;
   column-gap: 20px;
+}
+
+.filterlist button {
+  padding: 8px 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #4d1d7a;
+  border: 1px solid #4d1d7a;
+}
+
+.filterlist .active {
+  color: #fff;
+  background-color: #4d1d7a;
 }
 
 .itemslist {
@@ -18,7 +33,3 @@
   row-gap: 30px;
 }
 
-.active {
-  color: #fff;
-  background-color: blue;
-}
