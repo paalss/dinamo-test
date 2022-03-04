@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import Circle from "./components/Circle";
 import Collapsible from "./components/Collapsible";
 
-import classes from "./Main.module.css"
+import classes from "./Main.module.css";
 
 const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState("all");
@@ -55,6 +55,14 @@ const Main = ({ itemsInfo }) => {
     setCollapsibleValues([item, rowId]);
   };
 
+  const activeClassWhenFilterIs = (activeFilter, type) => {
+    if (activeFilter === "all") {
+      return filter === activeFilter ? "button-active" : "";
+    } else {
+      return filter[type] === activeFilter ? "button-active" : "";
+    }
+  };
+
   return (
     <main className="container">
       <p className={classes.smalltitle}>Stikktittel</p>
@@ -64,51 +72,51 @@ const Main = ({ itemsInfo }) => {
       </p>
       <div className={classes.filterlist}>
         <button
-          className={filter === "all" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("all")}
           onClick={() => toggle("all")}
         >
           Vis alle
         </button>
         <b>Farge</b>
         <button
-          className={filter.color === "green" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("green", "color")}
           onClick={() => toggle({ color: "green" })}
         >
           Grønn
         </button>
         <button
-          className={filter.color === "yellow" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("yellow", "color")}
           onClick={() => toggle({ color: "yellow" })}
         >
           Gul
         </button>
         <button
-          className={filter.color === "red" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("red", "color")}
           onClick={() => toggle({ color: "red" })}
         >
           Rød
         </button>{" "}
         <b>Kategori</b>
         <button
-          className={filter.category === "eple" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("eple", "category")}
           onClick={() => toggle({ category: "eple" })}
         >
           eple
         </button>
         <button
-          className={filter.category === "appelsin" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("appelsin", "category")}
           onClick={() => toggle({ category: "appelsin" })}
         >
           appelsin
         </button>
         <button
-          className={filter.category === "gulrot" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("gulrot", "category")}
           onClick={() => toggle({ category: "gulrot" })}
         >
           gulrot
         </button>
         <button
-          className={filter.category === "kiwi" ? 'button-active' : ""}
+          className={'button ' + activeClassWhenFilterIs("kiwi", "category")}
           onClick={() => toggle({ category: "kiwi" })}
         >
           Kiwi
@@ -149,7 +157,7 @@ const Main = ({ itemsInfo }) => {
           }
         })}
       </div>
-      <button>Vis flere</button>
+      <button className="button">Vis flere</button>
     </main>
   );
 };

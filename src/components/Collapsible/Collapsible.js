@@ -7,6 +7,7 @@ const Collapsible = ({ content, rowCount }) => {
     [item, rowId] = content;
   }
   if (content && rowCount === rowId) {
+    // at vi har content, betyr at bruker har klikket på en sirkel
     return (
       <div className={classes.collapsible} id={rowId}>
         <>
@@ -18,7 +19,9 @@ const Collapsible = ({ content, rowCount }) => {
                 <b>Category:</b> {item.category}
               </p>
             </div>
-            <div className={classes.right}>X</div>
+            <div className={classes.right}>
+              <button className="reset-button-style">X</button>
+            </div>
           </div>
           <div className={classes.row}>
             <div>
@@ -27,7 +30,7 @@ const Collapsible = ({ content, rowCount }) => {
             <div>
               <p className={classes.intro}>{item.intro}</p>
               <p className={classes.description}>{item.description}</p>
-              <a href={item.link}>Les mer om {item.title}</a>
+              <a href={item.link} className="button">Les mer om {item.title}</a>
             </div>
           </div>
         </>
