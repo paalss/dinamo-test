@@ -18,3 +18,7 @@ footer {
   color: #fff;
   background-color: blue;
 }
+
+.container {
+  padding: 30px 5%;
+}

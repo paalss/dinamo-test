@@ -1,7 +1,7 @@
 import classes from "./Header.module.css";
 
 const Header = () => (
-  <header className={classes.header}>
+  <header className={classes.header + ' container'}>
     <nav>
       <div className={classes.circle}></div>
     </nav>

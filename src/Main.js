@@ -2,6 +2,8 @@ import { Fragment, useState } from "react";
 import Circle from "./components/Circle";
 import Collapsible from "./components/Collapsible";
 
+import classes from "./Main.module.css"
+
 const Main = ({ itemsInfo }) => {
   const [filter, setFilter] = useState("all");
   const [collapsibleValues, setCollapsibleValues] = useState(false);
@@ -54,9 +56,9 @@ const Main = ({ itemsInfo }) => {
   };
 
   return (
-    <main>
-      <p>Stikktittel</p>
-      <p>
+    <main className="container">
+      <p className={classes.smalltitle}>Stikktittel</p>
+      <p className={classes.intro}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         numquam tempora, iste assumenda quos eius quas labore doloribus rem at
         cumque! Voluptatibus, rerum doloremque laboriosam nostrum tenetur
